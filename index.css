@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.scoreboard{
+    background:black;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 3px;
+    border:1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(158, 34, 34);
+    font-weight: 300;
+    font-size: 7.5em;
+}
+@media only screen and (max-width:768px){
+    .scoreboard{
+        max-width: 100px;
+        max-height: 70px;
+        font-size:3.5em;
+    }
+}
+button{
+    margin:10px;
+    border:1px solid cyan;
+    border-radius:4px;
+    background:black;
+    text-align:center;
+    font-size: 1.4em;
+    color:white;
+}
+button:hover{
+    color:black;
+    background:white;
+}
+button:focus{
+    border:3px solid cyan;
+}
+@media only screen and (max-width:768px){
+    button{
+        margin:1px;
+        font-size:1.2em;
+        border-radius:2px;
+    }
+}
+.reset{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}

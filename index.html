@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Score Tracker</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3 class="display-6">HOME</h3>
+            <div class="scoreboard" id="score1">0</div>
+            <div class="container">
+            <button  onclick="addOneh()">+1</button>
+            <button  onclick="addTwoh()">+2</button>
+            <button  onclick="addThreeh()">+3</button>
+            </div> 
+        </div>
+        <div>
+            <h3 class="display-6">GUEST</h3>
+            <div class="scoreboard" id="score2">0</div>
+            <div class="container">
+                <button  onclick="addOneg()">+1</button>
+                <button  onclick="addTwog()">+2</button>
+                <button  onclick="addThreeg()">+3</button>
+            </div> 
+        </div>
+    </div>
+    <div class="reset">
+            <button onclick="reset()">Reset</button> 
+    </div>
+        <script src="index.js"></script>
+</body>
